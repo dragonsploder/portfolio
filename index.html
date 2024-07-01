@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua Bourgeot</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var quotes = [
+                ["\"We should consider every day lost on which we have not danced at least once.\"", "- Friedrich Nietzsche"],
+                ["\"And those who were seen dancing were thought to be insane by those who could not hear the music.\"", "- Friedrich Nietzsche"],
+                ["\"So many books, so little time.\"", "- Frank Zapp"],
+                ["\"In all things of nature there is something of the marvelous.\"", "- Aristotle"],
+                ["\"Life is not a problem to be solved, but a reality to experience.\"", "- Soren Kierkegaard"],
+                ["\"Physicists are made out of atoms. A physicist is an attempt by an atom to understand itself.\"", "- Carl Sagen"],
+                ["\"Knowledge is not free. You have to pay attention.\"", "- Richard Feynman"],
+                ["\"Nature does not hurry, yet everything is accomplished.\"", "- Lao Tzu"],
+                ["\"The perfect blossom is a rare thing. You can spend your life looking for one, and it would not be a wasted life. And yet, they are all perfect.\"", "- Katsumoto's Haiku"],
+                ["\"A ship is safe in harbor, but that's not what ships are for.\"", "- William Shedd"],
+                ["\"One must imagine Sisyphus happy.\"", "- Albert Calmus"],
+                ["\"Accept everything, just the way it is.\"", "- Miyamoto Muashi"],
+                ["\"Perfection is not attainable, but if we chase perfection we can catch excellence.\"", "- Vince Lombardi"],
+                ["\"Everyone should know how to program a computer, because it teaches you how to think!\"", "- Steve Jobs"],
+                ["\"I cannot remember the books I've read any more than the meals I have eaten; even so, they have made me.\"", "- Ralph Waldo Emerson"],
+                ["\"People think of education as something they can finish.\"", "- Isaac Asimov"],
+                ["\"In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.\"", "- Douglas Adams: The Hitchhiker's Guide to the Galaxy"],
+                ["\"I may not have gone where I intended to go, but I think I have ended up where I needed to be.\"", "- Douglas Adams: The Long Dark Tea-Time of the Soul"],
+                ["\"My life amounts to no more than one drop in a limitless ocean. Yet what is any ocean, but a multitude of drops?\"", "- David Mitchell: Cloud Atlas"],
+                ["\"It's a magical world, Hobbes, ol'buddy... Let's go exploring!\"", "- Bill Watterson: Calvin and Hobbes"]
+            ];
+            var quote = quotes[Math.floor(Math.random() * quotes.length)];
+            document.querySelector(".quote-body").textContent = quote[0];
+            document.querySelector(".quote-attribution").textContent = quote[1];
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="center-content">
+        <h1 class="home-title">Joshua Bourgeot</h1>
+        <div class="quote-container">
+            <hr class="quote-separator">
+            <p class="quote-body">"Oh uh."</p>
+            <p class="quote-attribution">- Joshua Bourgeot</p>
+        </div>
+    </div>
+</body>
+</html>

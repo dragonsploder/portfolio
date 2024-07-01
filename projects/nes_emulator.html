@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NES Emulator - Joshua Bourgeot</title>
+    <style>
+        :root {
+            --bg0: #282828;
+            --bg1: #3c3836;
+            --fg0: #fbf1c7;
+            --fg1: #ebdbb2;
+            --yellow: #d79921;
+            --blue: #458588;
+            --aqua: #689d6a;
+            --green: #98971a;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--bg0);
+            color: var(--fg0);
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--bg1);
+            padding: 10px 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+        nav li {
+            margin-left: 20px;
+        }
+        nav a {
+            color: var(--fg0);
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: var(--yellow);
+            color: var(--bg0);
+        }
+        h1 {
+            font-size: 2.5em;
+            color: var(--yellow);
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 80px; /* Increased to accommodate fixed nav bar */
+        }
+        .project-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .project-details {
+            background-color: var(--bg1);
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: var(--aqua);
+            margin-top: 0;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .tech-tag {
+            background-color: var(--blue);
+            color: var(--fg0);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Project Name</h1>
+        <img src="path/to/project-image.jpg" alt="Project Name" class="project-image">
+        <div class="project-details">
+            <h2>About this project</h2>
+            <p>This is where you would provide a detailed description of your project. Explain the problem it solves, your approach to the solution, and any challenges you faced during development. You can also mention the impact or results of the project.</p>
+            <p>You can add multiple paragraphs to thoroughly explain different aspects of the project, such as its features, your role in its development, or any interesting technical details.</p>
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <!-- Add or remove tech tags as needed -->
+            </div>
+            <h2>Key Features</h2>
+            <ul>
+                <li>Feature 1: Description of the first key feature</li>
+                <li>Feature 2: Description of the second key feature</li>
+                <li>Feature 3: Description of the third key feature</li>
+                <!-- Add or remove list items as needed -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
