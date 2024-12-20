@@ -198,3 +198,7 @@ h2 {
     margin-top: 20px;
     gap: 20px;
 }
+
+pre {
+    white-space: pre-wrap;
+}
