@@ -7,9 +7,40 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="imgs/favicon.ico">
     <style>
+        body, html {
+            align-items: flex-start; 
+        }
         .container {
             max-width: 80%;
             padding: 0px 0px;
+        }
+        @media only screen and (max-width: 1000px) { 
+            .container {
+                max-width: 100%; 
+                padding: 20px; 
+            }
+            .profile-section {
+                flex-direction: column;
+                align-items: center; 
+                text-align: center; 
+            }
+            .headshot {
+                width: 80%; 
+                max-width: 300px; 
+                margin-right: 0; 
+                margin-bottom: 20px
+            }
+            .bio {
+                padding: 15px;
+            }
+            p {
+                font-size: 1em; 
+            }
+            .external-button-container {
+                flex-direction: column; 
+                align-items: center; 
+                gap: 10px; 
+            }
         }
     </style>
 </head>
