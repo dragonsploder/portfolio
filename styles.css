@@ -102,12 +102,13 @@ h1 {
 
 .profile-section {
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
+    align-items: stretch;
     margin-bottom: 30px;
 }
+
 .headshot {
     width: 400px;
-    height: 600px;
     border-radius: 5px;
     object-fit: cover;
     margin-right: 30px;
@@ -201,4 +202,9 @@ h2 {
 
 pre {
     white-space: pre-wrap;
+}
+
+b {
+    font-weight: bold;
+    color: var(--yellow); 
 }
