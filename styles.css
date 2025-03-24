@@ -193,6 +193,7 @@ h2 {
     text-decoration: none;
     font-size: 1.1em;
     transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 10px;
 }
 .external-button:hover {
     background-color: var(--aqua-dim);
